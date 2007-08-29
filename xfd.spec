@@ -40,6 +40,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xfd
 %{_datadir}/X11/app-defaults/Xfd
-%{_mandir}/man1/xfd.1x.bz2
+%{_mandir}/man1/xfd.1x*
 
 
