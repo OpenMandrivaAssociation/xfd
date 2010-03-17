@@ -1,6 +1,6 @@
 Name:		xfd
 Version:	1.0.1
-Release:	%mkrel 9
+Release:	%mkrel 10
 Summary:	Display all the characters in an X font
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
