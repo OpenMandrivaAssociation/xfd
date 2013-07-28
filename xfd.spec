@@ -9,8 +9,8 @@ License:	MIT
 BuildRequires: pkgconfig(fontconfig) >= 2.3.93
 BuildRequires: pkgconfig(freetype2) >= 2.1.10
 BuildRequires: pkgconfig(xft) >= 2.1.8.2
-BuildRequires: libxt-devel >= 1.0.0
-BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: pkgconfig(xt)
+BuildRequires: xaw-devel >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
