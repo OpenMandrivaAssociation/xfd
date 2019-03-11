@@ -5,13 +5,15 @@ Summary:	Display all the characters in an X font
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-
-BuildRequires: pkgconfig(fontconfig) >= 2.3.93
-BuildRequires: pkgconfig(freetype2) >= 2.1.10
-BuildRequires: pkgconfig(xft) >= 2.1.8.2
-BuildRequires: pkgconfig(xt)
-BuildRequires: xaw-devel >= 1.0.1
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(fontconfig) >= 2.3.93
+BuildRequires:	pkgconfig(freetype2) >= 2.1.10
+BuildRequires:	pkgconfig(xft) >= 2.1.8.2
+BuildRequires:	pkgconfig(xt)
+BuildRequires:	pkgconfig(xrender)
+BuildRequires:	pkgconfig(xmu)
+BuildRequires:	pkgconfig(xkbfile)
+BuildRequires:	xaw-devel >= 1.0.1
+BuildRequires:	x11-util-macros >= 1.0.1
 
 %description
 The xfd utility creates a window containing the name of the font being
