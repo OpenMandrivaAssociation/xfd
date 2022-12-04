@@ -1,9 +1,9 @@
 Name:		xfd
-Version:	1.1.3
+Version:	1.1.4
 Release:	1
 Summary:	Display all the characters in an X font
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 BuildRequires:	pkgconfig(fontconfig) >= 2.3.93
 BuildRequires:	pkgconfig(freetype2) >= 2.1.10
@@ -13,7 +13,7 @@ BuildRequires:	pkgconfig(xrender)
 BuildRequires:	pkgconfig(xmu)
 BuildRequires:	pkgconfig(xkbfile)
 BuildRequires:	xaw-devel >= 1.0.1
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 The xfd utility creates a window containing the name of the font being
@@ -35,4 +35,4 @@ to bottom.
 %files
 %{_bindir}/xfd
 %{_datadir}/X11/app-defaults/Xfd
-%{_mandir}/man1/xfd.1*
+%doc %{_mandir}/man1/xfd.1*
