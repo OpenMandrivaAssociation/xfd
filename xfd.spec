@@ -5,6 +5,11 @@ Summary:	Display all the characters in an X font
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(fontconfig) >= 2.3.93
 BuildRequires:	pkgconfig(freetype2) >= 2.1.10
 BuildRequires:	pkgconfig(xft) >= 2.1.8.2
